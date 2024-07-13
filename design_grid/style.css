@@ -1,0 +1,52 @@
+* {
+    background: grey;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 300;
+    color: whitesmoke
+}
+
+.container {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* align-items:center; */
+    background-color: darkorange;
+    height: 850px;
+    width: 850px;
+    margin: 25% auto;
+    grid-gap : 5px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    background: darkred;
+}
+
+.box5,
+.box6,
+.box7,
+.box8 {
+    background: darkblue;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid whitesmoke;
+    /* height:100px;
+    width:100px; */
+}
+
+.box1 , .box5{
+    grid-row : span 2;
+    grid-column : span 2;
+
+}
+
+.box2 , .box6{
+    grid-column: span 2;
+}
