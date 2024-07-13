@@ -1,0 +1,38 @@
+*{
+    background:gray;
+    font-family:'Courier New', Courier, monospace;
+    font-size : 1.5rem;
+    color:whitesmoke;
+}
+
+.container{
+    margin: 25% auto;
+    background:darkgoldenrod;
+    height: 700px;
+    width: 700px;
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows:25% 50% 25%;
+
+}
+
+.box{
+    background:darkred;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:3px solid ghostwhite;
+}
+
+.box1{
+    grid-row : span 2;
+    grid-column: span 2;
+}
+
+.box2{
+    grid-column : span 2;
+}
+
+.box5{
+    grid-column: span 4;
+}
